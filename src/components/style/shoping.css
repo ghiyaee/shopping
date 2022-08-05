@@ -44,5 +44,6 @@ font-weight: bold;
     cursor: pointer;
 }
 .trash{
-   color: #000 !important
+  
+   color: rgb(230, 225, 225) !important
 }

@@ -11,7 +11,7 @@ const Shopping = () => {
          return 
       
     } else if(countContext==1) {
-      return <i onClick={() => countDisptach("decrement")} className="fa-solid fa-trash-can"></i>
+      return <i  onClick={() => countDisptach("decrement")} className="fa-solid fa-trash-can trash"></i>
     }
   }
     return (
@@ -24,8 +24,7 @@ const Shopping = () => {
             </span>
             <span onClick={() => countDisptach("increment")}>+</span>
             <span>{countContext}</span>
-            <span> { handel() }
-            </span>
+            { handel() }
           </div>
         </div>
       </div>
