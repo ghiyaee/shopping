@@ -17,7 +17,7 @@ const Shopping = () => {
     return (
       <div className="container">
         <div className="content">
-          <h1>shopping cart with  useContext and useReducer</h1>
+          <h1>shopping cart (basket) with  useContext and useReducer</h1>
           <div className="row">
             <span>
               <i className="fa-solid fa-apple-whole"></i>
