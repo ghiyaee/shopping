@@ -4,7 +4,7 @@ import "./style/shoping.css"
 const Shopping = () => {
   const { countContext, countDisptach } = useContext(MyContext);
 
-  const handel = () => {
+  const handelActions = () => {
     if (countContext > 1) {
       return  <span className="trash" onClick={() => countDisptach("DECREMET")}> - </span>
     } else if (countContext == 0) {
@@ -24,7 +24,7 @@ const Shopping = () => {
             </span>
             <span onClick={() => countDisptach("INCREMET")}>+</span>
             <span>{countContext}</span>
-            { handel() }
+            { handelActions() }
           </div>
         </div>
       </div>
