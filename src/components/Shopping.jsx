@@ -6,12 +6,12 @@ const Shopping = () => {
 
   const handel = () => {
     if (countContext > 1) {
-      return  <span className="trash" onClick={() => countDisptach("decrement")}> - </span>
+      return  <span className="trash" onClick={() => countDisptach("DECREMET")}> - </span>
     } else if (countContext == 0) {
          return 
       
     } else if(countContext==1) {
-      return <i  onClick={() => countDisptach("decrement")} className="fa-solid fa-trash-can trash"></i>
+      return <i  onClick={() => countDisptach("DECREMET")} className="fa-solid fa-trash-can trash"></i>
     }
   }
     return (
@@ -22,7 +22,7 @@ const Shopping = () => {
             <span>
               <i className="fa-solid fa-apple-whole"></i>
             </span>
-            <span onClick={() => countDisptach("increment")}>+</span>
+            <span onClick={() => countDisptach("INCREMET")}>+</span>
             <span>{countContext}</span>
             { handel() }
           </div>

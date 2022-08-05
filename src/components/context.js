@@ -2,9 +2,9 @@ import { createContext,useReducer } from "react";
 const initailState = 0 ;
 const reducer = (state, action) =>{
     switch (action) {
-        case 'increment':
+        case 'INCREMET':
             return state + 1
-        case 'decrement':
+        case 'DECREMET':
             return   state > 0 ? state - 1: state = 0
         default:
             return state  
