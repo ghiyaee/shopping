@@ -5,17 +5,16 @@ import {ColorContext} from './colorContext'
 import "./style/shoping.css"
 const Shopping = () => {
   const { countContext, countDisptach } = useContext(MyContext);
-
   const { colorChange, disptachChange } = useContext(ColorContext);
   console.log(countContext.counter);
   const handelActions = () => {
-    if (countContext.counter > 1) {
+    if (countContext.counter1 > 1) {
      
       return  <span className="trash" onClick={() => countDisptach("DECREMET")}> - </span>
-    } else if (countContext.counter == 0) {
+    } else if (countContext.counter1 == 0) {
          return 
       
-    } else if(countContext.counter==1) {
+    } else if(countContext.counter1==1) {
       return <i  onClick={() => countDisptach("DECREMET")} className="fa-solid fa-trash-can trash"></i>
     }
   }
@@ -34,9 +33,10 @@ const Shopping = () => {
               <i className="fa-solid fa-apple-whole"></i>
             </span>
             <span onClick={() => countDisptach("INCREMET")}>+</span>
-            <span>{countContext.counter}</span>
+            <span>{countContext.counter1}</span>
             {handelActions()}
           </div>
+          
           <p>total:{countContext.total}</p>
           <i
             className={` fa-solid fa-arrows-rotate  `}

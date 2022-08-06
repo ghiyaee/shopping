@@ -1,6 +1,6 @@
 import { createContext,useReducer } from "react";
 const initailState = {
-    counter: 0,
+    counter1: 0,
     total :0
 } ;
 const reducer = (state, action) =>{
@@ -8,15 +8,15 @@ const reducer = (state, action) =>{
         case 'INCREMET':
             return {
                 ...state,
-                counter: state.counter + 1,
-                total: state.total + 1
+                counter1: state.counter1 + 1,
+                total: state.total +1
             }
      
         case 'DECREMET':
             return {
                 ...state,
-                counter:
-                    state.counter > 0 ? state.counter - 1 : state.counter = 0,
+                counter1:
+                    state.counter1 > 0 ? state.counter1 - 1 : state.counter1 = 0,
                 total:
                 state.total > 0 ? state.total - 1 : state.total = 0
             }
