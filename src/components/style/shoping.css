@@ -30,6 +30,7 @@
      border: 2px solid rgb(116, 114, 114);
      margin-top: 1rem;
      border-radius: 7px;
+     cursor: pointer;
 }
 .row span{
     margin:0.5rem;
@@ -46,4 +47,13 @@ font-weight: bold;
 .trash{
   
    color: rgb(230, 225, 225) !important
+
+}
+.tomato{
+   background:tomato
+}
+i{
+    cursor: pointer;
+    color:#fff;
+    margin-top: 5px;
 }
