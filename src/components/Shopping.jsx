@@ -1,6 +1,7 @@
 import { MyContext } from "./context";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import {ColorContext} from './colorContext'
+
 import "./style/shoping.css"
 const Shopping = () => {
   const { countContext, countDisptach } = useContext(MyContext);
@@ -16,6 +17,11 @@ const Shopping = () => {
       return <i  onClick={() => countDisptach("DECREMET")} className="fa-solid fa-trash-can trash"></i>
     }
   }
+  useEffect(() => {
+      colorChange == " "
+        ? disptachChange("COLOR_GHANGE")
+        : disptachChange("COLOR_BACK");
+  },[])
     return (
       <div className="container">
         <div className="content">

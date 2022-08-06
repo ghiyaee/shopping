@@ -1,8 +1,7 @@
 import Shopping from "./Shopping";
 const Cart = () => {
-    return (
-        <Shopping/>
-    );
-}
- 
+ return(
+      <Shopping />
+      )
+};
 export default Cart;
