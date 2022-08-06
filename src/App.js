@@ -1,6 +1,5 @@
-import { MyProvider } from "./components/context";
-import { ColorProvider } from "./components/colorContext";
-import Shopping from "./components/Shopping";
+import { MyProvider } from "../src/components/context";
+import { ColorProvider } from "../src/components/colorContext";
 import Cart from "../src/components/Cart";
 const App = () => {
   return ( 
