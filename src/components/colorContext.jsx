@@ -3,14 +3,14 @@ import { createContext, useReducer } from "react";
 const ColorContext = createContext();
 
 const initailState = {
-  color: 'black',
+  color: ' ',
 };
 const reducer = (state, action) => {
   switch (action) {
     case "COLOR_GHANGE":
       return (state = "tomato");
     case "COLOR_BACK":
-      return (state = "black");
+      return (state = " ");
     default:
       return state;
   }

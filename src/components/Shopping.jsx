@@ -32,7 +32,7 @@ const Shopping = () => {
           <i
             className={` fa-solid fa-arrows-rotate  `}
             onClick={() =>
-              colorChange == "black"
+              colorChange == " "
                 ? disptachChange("COLOR_GHANGE")
                 : disptachChange("COLOR_BACK")
             }
