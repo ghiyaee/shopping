@@ -13,7 +13,7 @@ const App = () => {
 
   return ( 
     <div className="container">
-      <h1> sliders</h1>
+      <h1> Slider With React</h1>
       <div className="content">
         <Cart img={img} />
       </div>
