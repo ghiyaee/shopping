@@ -1,9 +1,10 @@
-import { useState ,useEffect } from "react";
+
+import { useState, useEffect } from "react";
 // import Shopping from "./Shopping"
 import "./style/cart.css";
-const Cart = ({ img }) => {
+const Cart = ({img}) => {
   let [imgCurrent, setImag] = useState(0);
-  const slide = { backgroundImage: `url(${img[imgCurrent].url})` };
+  const slide = { backgroundImage: `url(${img[imgCurrent]})` };
   const goToPerv = () => {
     imgCurrent > 0 ? setImag(imgCurrent - 1): setImag(img.length - 1)
   };
@@ -15,12 +16,11 @@ const Cart = ({ img }) => {
   }
   
   useEffect(() => {
-   const restTime=  setInterval(() => {
-      goToNext()
-      
-    }, 3000)
+   const resetTime=  setInterval(() => {
+     goToNext()
+    },3000)
     return () => {
-      clearInterval(restTime)
+      clearInterval(resetTime)
     }
   },[imgCurrent])
   return (

@@ -1,23 +1,33 @@
 // import { MyProvider } from "../src/components/context";
 // import { ColorProvider } from "../src/components/colorContext";
+import { SliderProvider } from "./components/contextSlider";
+
+import Slider from "./components/Slider";
 import Cart from "../src/components/Cart";
 import "../src/components/style/app.css"
+import img1 from "../src/img/img-1.jpg"
+import img2 from "../src/img/img-2.jpg"
+import img3 from "../src/img/img-3.jpg"
+import img4 from "../src/img/img-4.jpg"
+import SliderBar from "./components/Slider";
 const App = () => {
   const img = [
-    { url: 'http://localhost:3000/img-1.jpg', titel: 'img-1' },
-    { url: 'http://localhost:3000/img-2.jpg', titel: 'img-2' },
-    { url: 'http://localhost:3000/img-3.jpg', titel: 'img-3' },
-    { url: 'http://localhost:3000/img-4.jpg', titel: 'img-4' },
-       
+    img1,
+    img2,
+    img3,
+    img4
   ]
 
   return ( 
+    <SliderProvider>
     <div className="container">
-      <h1> Slider With React</h1>
+      <h1> Slider With React useReducer and useContext ane useEffect</h1>
       <div className="content">
-        <Cart img={img} />
+          {/* <Cart img={img} /> */}
+          <SliderBar/>
       </div>
     </div>
+     </SliderProvider>
       
      )
 } 

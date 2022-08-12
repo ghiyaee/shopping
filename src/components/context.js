@@ -55,8 +55,8 @@ const MyProvider = ({
             }
         } > {
             children
-        }
-    </MyContext.Provider>
+        } 
+        </MyContext.Provider>
     )
 }
 export {
