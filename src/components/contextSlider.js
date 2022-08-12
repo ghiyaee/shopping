@@ -10,12 +10,12 @@ const initailState = {
 }
 const reducer = (state, action) => {
     switch (action) {
-        case 'goToNext':
+        case 'GoToNext':
             return {
                 ...state,
                 counter: state.counter < state.imgs.length-1 ? state.counter + 1 : state.counter = 0
             }
-            case 'goToPerv':
+            case 'GoToPerv':
                 return {
                 ...state,
                 counter: state.counter > 0 ? state.counter - 1 : state.counter = state.imgs.length -1
