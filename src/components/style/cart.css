@@ -8,6 +8,7 @@
   border-radius: 10px;
   background-size: cover;
   object-fit: cover;
+  transition: all 0.6s ease-in-out;
 }
 .arrow-left {
   position: absolute;

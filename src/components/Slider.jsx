@@ -8,7 +8,7 @@ const SliderBar = () => {
   useEffect(() => {
     const reset = setInterval(() => {
       disptachs("GoToNext");
-    }, 3000)
+    }, 5000)
     return () => {
       clearInterval(reset)
     }
